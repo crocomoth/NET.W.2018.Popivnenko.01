@@ -9,24 +9,76 @@ namespace NET.W._2018.Popivnenko._01.Model
 {
     public class ArraySorter : IArraySorter
     {
-        public void MergeSort<T>(T[] array) where T : IComparable
+        public void MergeSort<T>(T[] array) where T : IComparable<T>
         {
-            throw new NotImplementedException();
-        }
-
-        public void QuickSort<T>(T[] array) where T : IComparable
-        {
-            if (array != null)
+            if ((array != null) && (array.Length != 0))
             {
-                DoQuickSort<T>(array, 0, array.Length - 1);
+                SortMerge(array, 0, array.Length - 1);
             }
             else
             {
-                throw new NullReferenceException("array is null");
+                throw new ArgumentNullException("array is null");
             }
         }
 
-        private void DoQuickSort<T>(T[] array, int leftBorder,int rightBorder) where T: IComparable
+
+        private void MainMerge<T>(T[] numbers, int left, int mid, int right) where T: IComparable<T>
+
+        {
+            T[] temp = new T[numbers.Length];
+            int i, eol, num, pos;
+
+            eol = (mid - 1);
+            pos = left;
+            num = (right - left + 1);
+
+            while ((left <= eol) && (mid <= right))
+            {
+                if (numbers[left].CompareTo(numbers[mid]) < 0)
+                    temp[pos++] = numbers[left++];
+                else
+                    temp[pos++] = numbers[mid++];
+            }
+            while (left <= eol)
+                temp[pos++] = numbers[left++];
+            while (mid <= right)
+                temp[pos++] = numbers[mid++];
+
+            for (i = 0; i < num; i++)
+            {
+                numbers[right] = temp[right];
+                right--;
+            }
+        }
+
+        private void SortMerge<T>(T[] numbers, int left, int right) where T:IComparable<T>
+        {
+            int mid;
+            if (right > left)
+            {
+                mid = (right + left) / 2;
+                SortMerge(numbers, left, mid);
+                SortMerge(numbers, (mid + 1), right);
+                MainMerge(numbers, left, (mid + 1), right);
+
+            }
+
+        }
+
+
+        public void QuickSort<T>(T[] array) where T : IComparable<T>
+        {
+            if ((array != null) && (array.Length != 0))
+            {
+                DoQuickSort(array, 0, array.Length - 1);
+            }
+            else
+            {
+                throw new ArgumentNullException("array is null");
+            }
+        }
+
+        private void DoQuickSort<T>(T[] array, int leftBorder,int rightBorder) where T: IComparable<T>
         {
             int i = leftBorder;
             int j = rightBorder;
