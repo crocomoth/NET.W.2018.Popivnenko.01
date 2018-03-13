@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.W.2018.Popivnenko.01.AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.W.2018.Popivnenko.01.Model", "NET.W.2018.Popivnenko.01.Model\NET.W.2018.Popivnenko.01.Model.csproj", "{88B904B7-CE7C-48A8-A7AC-D04897C43DA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET.W.2018.Popivnenko.01.ClassHierarchy", "NET.W.2018.Popivnenko.01.ClassHierarchy\NET.W.2018.Popivnenko.01.ClassHierarchy.csproj", "{34D10807-F33C-4987-9F0E-D488DF4F77D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{88B904B7-CE7C-48A8-A7AC-D04897C43DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88B904B7-CE7C-48A8-A7AC-D04897C43DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88B904B7-CE7C-48A8-A7AC-D04897C43DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D10807-F33C-4987-9F0E-D488DF4F77D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D10807-F33C-4987-9F0E-D488DF4F77D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D10807-F33C-4987-9F0E-D488DF4F77D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D10807-F33C-4987-9F0E-D488DF4F77D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
