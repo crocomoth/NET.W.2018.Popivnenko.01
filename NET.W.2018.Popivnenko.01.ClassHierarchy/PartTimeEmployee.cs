@@ -10,7 +10,7 @@ namespace NET.W._2018.Popivnenko._01.ClassHierarchy
     {
         private string WorkingHours;
 
-        protected PartTimeEmployee(string name, string department, int salary,string workingHours) : base(name, department, salary)
+        public PartTimeEmployee(string name, string department, int salary,string workingHours) : base(name, department, salary)
         {
             this.WorkingHours = workingHours;
         }

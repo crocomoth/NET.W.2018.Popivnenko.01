@@ -10,6 +10,7 @@ namespace NET.W._2018.Popivnenko._01.TestProject
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }

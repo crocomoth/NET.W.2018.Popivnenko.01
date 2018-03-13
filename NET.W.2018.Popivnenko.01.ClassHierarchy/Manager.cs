@@ -10,7 +10,7 @@ namespace NET.W._2018.Popivnenko._01.ClassHierarchy
     {
         private List<Employee> employees;
 
-        protected Manager(string name, string department, int salary,List<Employee> list) : base(name, department, salary)
+        public Manager(string name, string department, int salary,List<Employee> list) : base(name, department, salary)
         {
             this.employees = list;
         }

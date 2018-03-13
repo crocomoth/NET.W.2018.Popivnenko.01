@@ -8,7 +8,7 @@ namespace NET.W._2018.Popivnenko._01.ClassHierarchy
 {
     public class Employee : Person
     {
-        protected Employee(string name, string department, int salary) : base(name, department, salary)
+        public Employee(string name, string department, int salary) : base(name, department, salary)
         {
         }
 
