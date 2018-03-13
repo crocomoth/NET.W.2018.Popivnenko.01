@@ -3,8 +3,7 @@
 ## Description
 
 > This project includes
-*API:
-	*IArraySorter
-	
-*Model:
-	*ArraySorter
+* API:
+	* IArraySorter
+* Model:
+	* ArraySorter
