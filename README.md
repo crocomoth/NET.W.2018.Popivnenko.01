@@ -5,5 +5,6 @@
 > This project includes
 * API:
 	* IArraySorter
+
 * Model:
 	* ArraySorter
