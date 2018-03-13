@@ -32,6 +32,10 @@ namespace NET.W._2018.Popivnenko._01.ClassHierarchy
 
         public void AddEmployee(Employee employee)
         {
+            if (employees == null)
+            {
+                throw new NullReferenceException("error with calling employees");
+            }
             this.employees.Add(employee);
         }
     }

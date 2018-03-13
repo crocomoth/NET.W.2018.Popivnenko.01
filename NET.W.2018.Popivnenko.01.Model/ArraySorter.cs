@@ -9,6 +9,11 @@ namespace NET.W._2018.Popivnenko._01.Model
 {
     public class ArraySorter : IArraySorter
     {
+        /// <summary>
+        /// this is an exposed method that encapsulates actual calls for sorting
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="array"></param>
         public void MergeSort<T>(T[] array) where T : IComparable<T>
         {
             if ((array != null) && (array.Length != 0))
