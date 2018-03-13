@@ -8,7 +8,7 @@ namespace NET.W._2018.Popivnenko._01.ClassHierarchy
 {
     public abstract class Person
     {
-        protected Person(string name, string department, int salary)
+        public Person(string name, string department, int salary)
         {
             this.name = name;
             this.department = department;
